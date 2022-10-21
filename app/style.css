@@ -105,3 +105,32 @@ input {
     border-bottom: 0.7rem solid var(--bg);
     content: "";
 }
+
+.confetti .dodecagram {
+    background: var(--bg);
+    height: 8px;
+    width: 8px;
+    position: relative;
+}
+
+.confetti .dodecagram:before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: var(--bg);
+    transform: rotate(30deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.confetti .dodecagram:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: var(--bg);
+    transform: rotate(60deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
