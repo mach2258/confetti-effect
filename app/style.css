@@ -134,3 +134,39 @@ input {
     top: 0;
     left: 0;
 }
+
+.confetti .wavy-line {
+    position: relative;
+}
+
+.confetti .wavy-line::after,
+.confetti .wavy-line::before {
+    content: "";
+    height: 10px;
+    width: 80px;
+    background-size: 20px 10px;
+    position: absolute;
+    left: -9rem;
+    transform: rotate(90deg);
+}
+
+.confetti .wavy-line::before {
+    background-image: linear-gradient(
+        45drg,
+        transparent,
+        transparent 50%,
+        var(--bg) 50%,
+        transparent 60%
+    );
+    top: 1rem;
+}
+
+.confetti .wavy-line::after {
+    background-image: linear-gradient(
+        -45deg,
+        transparent,
+        transparent 50%,
+        var(--bg) 50%,
+        transparent 60%
+    );
+}
