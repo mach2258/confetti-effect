@@ -53,3 +53,55 @@ input {
     border-bottom: 1rem solid var(--bg);
     position: relative;
 }
+
+.confetti .hexagram:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 1rem solid var(--bg);
+    position: absolute;
+    top: 0.33rem;
+    left: -0.5rem;
+}
+
+.confetti .pentagram {
+    width: 0rem;
+    height: 0rem;
+    display: block;
+    margin: 0.5rem 0;
+    border-right: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-bottom: 0.7 solid var(--bg);
+    transform: rotate(35deg);
+    position: relative;
+}
+
+.confetti .pentagram:before {
+    width: 0;
+    height: 0;
+    top: -0.45rem;
+    left: -0.65rem;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+    border-bottom: 0.8rem solid var(--bg);
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    position: absolute;
+}
+
+.confetti .pentagram:after {
+    display: block;
+    position: absolute;
+    color: var(--bg);
+    top: 0.03rem;
+    left: -1.05rem;
+    width: 0rem;
+    height: 0rem;
+    border-right: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-bottom: 0.7rem solid var(--bg);
+    content: "";
+}
