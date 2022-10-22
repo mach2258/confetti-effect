@@ -30,6 +30,9 @@ input {
     left: 0;
     right: 0;
     display: flex;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
 }
 
 .confetti .square {
@@ -192,4 +195,8 @@ input {
     100% {
         transform: translateY(100vh);
     }
+}
+
+input:checked + .confetti-container i{
+    animation-play-state: paused;
 }
